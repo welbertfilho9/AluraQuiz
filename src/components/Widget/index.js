@@ -3,13 +3,14 @@ import styled from 'styled-components'
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: 4px solid ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => {
     return theme.colors.mainBg;
   }};
   overflow: hidden;
 
   h1, h2, h3 {
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
@@ -17,6 +18,7 @@ const Widget = styled.div`
   }
 
   p {
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
